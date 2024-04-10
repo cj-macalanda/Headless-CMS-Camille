@@ -4,5 +4,11 @@
     "unresolved": "1,563",
     "overdue": "4,321",
     "open": "1,051",
-    "hold": "189"
+    "hold": "189",
+
+    "WaitingFeatReq": "4,238",
+    "AwaitingCusRes": "198",
+    "AwaitingDevFix": "788",
+    "Pending": "38"
+
 }

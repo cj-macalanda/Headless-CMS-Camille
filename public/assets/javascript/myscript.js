@@ -47,4 +47,33 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
+// =====================UNRESOLVED TICKETS============================================
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Fetch JSON data
+    fetch('../data/content.json')
+        .then(response => response.json())
+        .then(data => {
+            // Define an array of card titles
+            const cardTitles2 = ['WaitingFeatReq', 'AwaitingCusRes', 'AwaitingDevFix', 'Pending'];
+            
+            // Iterate over the card titles
+            cardTitles2.forEach((title, index) => {
+                // Get the corresponding value from JSON data
+                const value = data[title]; // JSON keys are lowercase
+                
+                // Select the corresponding card text element and set its text content
+                const cardTextElement = document.getElementById(`unresData${index + 1}`);
+                if (cardTextElement) {
+                    cardTextElement.textContent = value;
+                }
+                
+            }        
+        );
+        })
+        .catch(error => console.error('error', error));
+  });
+
   
