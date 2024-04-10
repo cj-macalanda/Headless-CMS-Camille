@@ -1,0 +1,263 @@
+body {
+    background-color: #F7F8FC;
+  }
+  
+  /*SIDEBAR CSS */
+  #sidebar {
+    background-color: #363740;
+    width: 300px;
+    height: 1100px;
+    color: #787a86;
+  }
+  
+  #logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  #sidebar h4 {
+    padding-top: 40px;
+    padding-left: 38px;
+  }
+  
+  #sidebar .items {
+    margin-top: 40px;
+  }
+  
+  #sidebar .items li {
+    list-style: none;
+    padding: 5px 10px;
+  }
+  
+  #sidebar li i {
+      margin-right: 12px;
+      padding: 15px;
+  }
+  
+  
+  /* hover animation */
+  #sidebar li:hover {
+      background-color: #3e4049;
+      color: #DDE2FF;
+  }
+  
+  /* .icons:hover {
+      color: #DDE2FF;
+  } */
+  
+  .line {
+      height: 1px;
+      background-color: #DFE0EB;
+      opacity: 0.06;
+  }
+  
+  
+  /* HEADER  */
+  #header {
+    width: 80%;
+    padding: 10px;
+  }
+  
+  #header h3 {
+    margin-left: 20px;
+  }
+  
+  #header-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  .v-line {
+    width: 1px;
+    height: 36px;
+    margin: 5px 20px;
+    align-content: center;
+    background-color: #DFE0EB;
+  }
+  
+  .header-icons {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header-icons li {
+    padding: 10px;
+  }
+  
+  #pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* CARDS CSS*/
+  #overview-card {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #overview-card .card {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* card hover */
+  #overview-card .card:hover {
+    color: #3751FF;
+    border-color: #3751FF;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-title {
+    color: #9FA2B4;
+    font-weight: 500;
+  }
+  
+  /* TRENDS CSS */
+  #chart {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #chart-img {
+    border: solid 1px #f2f2f7;
+    border-radius: 2% 0 0 2%;
+    width: 760px;
+    height: 544px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .trend-card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9FA2B4;
+    ;
+  }
+  
+  /* TIX AND TASKS CSS */
+  #tix-and-tasks {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  #unresolved-tix {
+    border: solid 1px #f2f2f7;
+    border-radius: 2%;
+    height: 320px;
+    width: 530px;
+    margin: 0 20px 0 0;
+  }
+  
+  #ut-head {
+    margin: 30px 30px 5px;
+    display: flex;
+  }
+  
+  #ut-head-group {
+    width: 50%;
+  }
+  
+  #ut-head-group p {
+    font-size: 14px;
+  }
+  
+  #view-details {
+    text-align: right;
+    width: 50%;
+  }
+  
+  #view-details a {
+    text-decoration: none;
+    color: #3751FF;
+    font-size: 14px;
+  }
+  
+  #unresolved-tix-table {
+    width: 100%;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #252733;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  .td-col-2 {
+    color: #9FA2B4;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #DFE0EB;
+  }
+  
+  #tasks {
+    border-radius: 2%;
+    border: solid 1px #f2f2f7;
+    height: 320px;
+    width: 530px;
+  }
+  
+  #tasks-table {
+    margin: 0 15px;
+    font-size: 14px;
+  }
+  
+  .form-check-label {
+    padding-left: 15px;
+  }
+  
+  .highlighted {
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  .highlighted-buttons {
+    width: 300px;
+    text-align: right;
+  }
+  
+  .sample {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 20px;
+  }
+  
+  #urgent {
+    background-color: #FEC400;
+  }
+  
+  #new {
+    background-color: #29CC97;
+  }
+  
+  #default {
+    background-color: #F0F1F7;
+    color: #9FA2B4;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

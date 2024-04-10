@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9c9b833cfa.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="container" class="d-flex p">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+      <h4>
+        <img src="assets/image/d-logo.png" id="logo" alt="Dashboard Kit logo" />
+        Dashboard Kit
+      </h4>
+      <!-- top -->
+      <ul class="items">
+        <li><i class="fa-solid fa-chart-pie" style="color: #60626e;"></i></i>Overview</li>
+        <li><i class="fa-solid fa-ticket" style="color: #60626e;"></i>Tickets</li>
+        <li><i class="fa-solid fa-lightbulb" style="color: #60626e;"></i>Ideas</li>
+        <li><i class="fa-solid fa-users" style="color: #60626e;"></i>Contacts</li>
+        <li><i class="fa-solid fa-user" style="color: #60626e;"></i>Agents</li>
+        <li><i class="fa-solid fa-book" style="color: #60626e;"></i>Articles</li>
+      </ul>
+      <!-- divider -->
+      <div class="line"></div>
+      <!-- bottom -->
+      <ul class="items">
+        <li><i class="fa-solid fa-gear" style="color: #60626e;"></i>Settings</li>
+        <li><i class="fa-solid fa-award" style="color: #60626e;"></i>Subscriptions</li>
+      </ul>
+    </div>
+
+    <!-- HEADER -->
+    <div id="header">
+      <div id="header-bar">
+        <div>
+          <h3>Overview</h3>
+        </div>
+
+        <div>
+          <ol class="header-icons">
+            <li><i class="fa-solid fa-magnifying-glass" style="color: #C5C7CD;"></i></li>
+            <li><i class="fa-solid fa-bell" style="color: #C5C7CD;"></i></li>
+
+            <div class="v-line"></div>
+
+            <li>
+              <p></p></i>
+            </li>
+            <li><img src="assets/image/camille.jpeg" id="pfp" alt="User Profile Picture"></i></li>
+          </ol>
+
+
+
+
+
+        </div>
+      </div>
+
+      <!-- CARDS -->
+      <div id="overview-card">
+        <div id="card" class="card" style="width: 14rem; height: 8rem">
+          <div id="card-content" class="card-content">
+            <p class="card-title">Unresolved</p>
+            <h2 class="card-num" id="overview-text1"></h2>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem; height: 8rem">
+          <div class="card-content">
+            <p class="card-title">Overdue</p>
+            <h2 class="card-num" id="overview-text2"></h2>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem; height: 8rem">
+          <div class="card-content">
+            <p class="card-title">Open</p>
+            <h2 class="card-num" id="overview-text3"></h2>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem; height: 8rem">
+          <div class="card-content">
+            <p class="card-title">Hold</p>
+            <h2 class="card-num" id="overview-text4"></h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRENDS -->
+      <!-- graph -->
+      <div id="chart">
+        <div id="insert-chart">
+          <img src="assets/image/todays-trends.png" id="chart-img" alt="Chart of Today's Trends" />
+        </div>
+        <!-- cards -->
+        <div class="trend-cards">
+          <div class="card" style="width: 16rem; height: 6rem; border-radius: 0 2% 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Resolved</p>
+              <h4 class="trend-card-text">449</h4>
+            </div>
+          </div>
+
+          <div class="card" style="width: 16rem; height: 7rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Received</p>
+              <h4 class="trend-card-text">426</h4>
+            </div>
+          </div>
+
+          <div class="card" style="width: 16rem; height: 7rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Average first response time</p>
+              <h4 class="trend-card-text">33 m</h4>
+            </div>
+          </div>
+
+          <div class="card" style="width: 16rem; height: 7rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Average response time</p>
+              <h4 class="trend-card-text">3h 8m</h4>
+            </div>
+          </div>
+
+          <div class="card" style="width: 16rem; height: 7rem; border-radius: 0 0 2% 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Resolution within SLA</p>
+              <h4 class="trend-card-text">94%</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TICKETS AND TASKS -->
+      <div id="tix-and-tasks">
+        <!-- unresolved tix -->
+        <div id="unresolved-tix">
+          <div id="ut-head">
+            <div id="ut-head-group">
+              <h4>Unresolved tickets</h4>
+              <p><span style="color:#9FA2B4">Group:</span> Support</p>
+            </div>
+
+            <div id="view-details">
+              <a href="url">View details</a>
+            </div>
+          </div>
+
+          <table id="unresolved-tix-table">
+            <tr>
+              <td class="td-col-1"> Waiting on Feature Request</td>
+              <td class="td-col-2">4,238</td>
+            </tr>
+            <tr>
+              <td class="td-col-1"> Awaiting Customer Response</td>
+              <td class="td-col-2">198</td>
+            </tr>
+            <tr>
+              <td class="td-col-1"> Awaiting Developer Fix</td>
+              <td class="td-col-2">788</td>
+            </tr>
+            <tr>
+              <td class="td-col-1"> Pending</td>
+              <td class="td-col-2">38</td>
+            </tr>
+          </table>
+        </div>
+              <!-- tasks -->
+      <div id="tasks">
+        <div id="unresolved-tickets">
+          <div id="ut-head">
+            <div id="ut-head-group">
+              <h4>Tasks</h4>
+              <p><span style="color:#9FA2B4">Today</span></p>
+            </div>
+
+            <div id="view-details">
+              <a href="url">View all</a>
+            </div>
+          </div>
+
+          <table id="tasks-table">
+            <tr>
+              <td class="details-td-col-1"><span style="color:#9FA2B4">Create New Task</span></td>
+              <td class="highlighted"><i class="fa-solid fa-square-plus fa-xl" style="color: #c8cbd0;"></i></i></td>
+            </tr>
+
+            <tr>
+              <td class="details-td-col-1">
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                  Finish Ticket Update
+                </label>
+              </td>
+              <td class="highlighted-buttons"><span id="urgent" class="sample">URGENT</span></td>
+            </tr>
+
+            <tr>
+              <td class="details-td-col-1">
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                  Create New Ticket
+                </label>
+              </td>
+              <td class="highlighted-buttons"><span id="new" class="sample">NEW</span></td>
+            </tr>
+
+            <tr>
+              <td class="details-td-col-1">
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                  Update Ticket Report
+                </label>
+              </td>
+              <td class="highlighted-buttons"><span id="default" class="sample">DEFAULT</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+  <script src="assets/javascript/myscript.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
